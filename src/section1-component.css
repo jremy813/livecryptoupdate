@@ -1,0 +1,93 @@
+.wave-container svg {
+  display: block;
+}
+
+.wave-container {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sec1info {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.sec1text {
+  margin-bottom: 3rem;
+}
+
+.sec1text h1,
+p {
+  margin-bottom: 2rem;
+}
+
+.sec1text p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 1.8;
+}
+
+.section1 button {
+  margin-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid #00bfa6;
+  border-radius: 20px;
+  background: white;
+  font-size: 1rem;
+  color: #00bfa6;
+}
+
+.section1 button:hover {
+  background-color: #00bfa6;
+  color: #fff;
+}
+
+.sec1currency span {
+  font-size: 20px;
+}
+
+@media (min-width: 600px) {
+  .sec1info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sec1text {
+    width: 65%;
+    margin-left: 10rem;
+    margin-top: 3rem;
+  }
+
+  .sec1currency {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 50%;
+    margin-left: 15rem;
+  }
+
+  svg {
+    margin-top: -0.5rem;
+  }
+
+  #title {
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .wave-container svg {
+    display: none;
+  }
+
+  #title {
+    font-size: 25px;
+    margin-bottom: 2rem;
+  }
+}
